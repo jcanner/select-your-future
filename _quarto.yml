@@ -6,9 +6,20 @@ project:
 
 website:
   title: "CSUMB Mathematics & Statistics | Math Career Exploration"
-  navbar: false
+  navbar: 
+    left:
+    - href: index.qmd
+      text: "Which Math Career is Right for You?"
+    - href: math-career-challenges.qmd
+      text: "Math Career Challenge Questions"  
+  
   page-footer:
     center: "CSUMB Mathematics & Statistics · Career exploration for high school students"
+
+
+
+
+
 
 format:
   html:
