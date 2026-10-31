@@ -179,10 +179,11 @@ ul.task-list li input[type="checkbox"] {
 #math-careers .score-list{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:17px 0 20px}
 #math-careers .score{padding:12px;background:#f0f3f5;border-radius:10px}#math-careers .score span{display:block;color:var(--muted);font-size:.76rem}
 #math-careers h2#career-guides{margin-top:42px}
-#math-careers h3.career-card{margin:34px 0 10px;padding:15px 18px;border-left:5px solid var(--ocean);border-radius:0 12px 12px 0;background:#fff;box-shadow:var(--shadow);scroll-margin-top:18px}
-#math-careers h3.career-card.highlight{outline:3px solid var(--green);outline-offset:2px}
-#math-careers .fine{color:var(--muted);font-size:.8rem;margin:14px 0 0}
-#math-careers a{color:var(--blue)}#math-careers .reset{margin-top:10px}
+#math-careers .career-card{margin:34px 0;padding:clamp(24px,4vw,36px);border:1px solid var(--line);border-left:5px solid var(--ocean);border-radius:0 16px 16px 0;background:#fff;box-shadow:var(--shadow);scroll-margin-top:18px}
+#math-careers .career-card.highlight{outline:3px solid var(--green);outline-offset:2px}
+#math-careers .career-card h3{margin:0 0 10px}
+#math-careers .fine{color:var(--muted);font-size:.8rem;margin:14px 0 0;padding-left:clamp(24px,4vw,36px);padding-right:clamp(24px,4vw,36px)}
+#math-careers a{color:var(--blue)}#math-careers .reset{margin-top:10px;padding-left:26px;padding-right:26px}
 @media(max-width:620px){#math-careers .photo-band{grid-template-columns:1fr}.photo-band img{height:210px!important}.score-list{grid-template-columns:repeat(2,1fr)}}
 @media(prefers-reduced-motion:reduce){#math-careers *{scroll-behavior:auto!important;transition:none!important}}
 </style>
