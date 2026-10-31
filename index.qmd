@@ -1,0 +1,331 @@
+---
+title: "Where Could Math Take You?"
+subtitle: "A five-question career-fit check-in for high school students"
+format:
+  html:
+    toc: false
+    page-layout: full
+---
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap');
+:root{--ink:#26364e;--muted:#586a7f;--paper:#f5f7f9;--line:#d9e0e8;--blue:#31456b;--ocean:#6b92b6;--green:#689466;--bright:#93b96c;--sunshine:#e0b457;--shadow:0 14px 38px rgba(38,54,78,.09)}
+#math-careers{max-width:900px;margin:0 auto;padding:12px 12px 52px;color:var(--ink);font:16px/1.55 Tahoma,Arial,sans-serif}
+#math-careers *{box-sizing:border-box}#math-careers button{font:inherit}
+#math-careers h1,#math-careers h2,#math-careers h3,#math-careers h4,#math-careers .quiz-top strong,#math-careers .btn{font-family:Montserrat,Tahoma,sans-serif}
+#math-careers h1,#math-careers h2,#math-careers h3{color:var(--blue)}
+#math-careers .brandline{display:flex;align-items:center;padding:10px 4px 18px;border-bottom:1px solid var(--line);margin-bottom:12px}
+#math-careers .brandline img{display:block;width:min(430px,88vw);height:auto;object-fit:contain;object-position:left center}
+#math-careers .eyebrow{color:var(--green);font-family:Montserrat,Tahoma,sans-serif;font-size:.76rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+#math-careers .hero{padding:20px 4px}
+#math-careers .hero p{max-width:700px;color:var(--muted);font-size:1.06rem}
+#math-careers .program-note{margin:8px 0 24px;padding:16px 18px;border-left:5px solid var(--green);border-radius:0 14px 14px 0;background:#eef4ee;color:#3e5746}
+#math-careers .program-note p{margin:0 0 8px;font-size:.93rem}
+#math-careers .program-note p:last-child{margin-bottom:0}
+#math-careers .program-note strong{font-family:Montserrat,Tahoma,sans-serif;color:var(--blue)}
+#math-careers .photo-band{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:8px 0 24px}
+#math-careers .photo-band figure{margin:0;overflow:hidden;border-radius:14px;background:#edf0f2}
+#math-careers .photo-band img{display:block;width:100%;height:235px;object-fit:cover}
+#math-careers .photo-band figcaption{padding:9px 12px;color:var(--muted);font-size:.8rem}
+#math-careers .quiz-card,#math-careers .result-card,#math-careers .career-card{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+#math-careers .quiz-card{padding:clamp(20px,4vw,36px)}
+#math-careers .quiz-top{display:flex;justify-content:space-between;gap:14px;margin-bottom:12px}
+#math-careers .quiz-top strong{color:var(--blue)}#math-careers .count{color:var(--muted);font-size:.9rem}
+#math-careers .track{height:9px;overflow:hidden;border-radius:99px;background:#e9edf5;margin-bottom:28px}
+#math-careers .fill{width:0;height:100%;background:linear-gradient(90deg,var(--ocean),var(--green));border-radius:inherit;transition:width .25s}
+#math-careers fieldset{border:0;padding:0;margin:0 0 20px;min-width:0}
+#math-careers legend{width:100%;margin-bottom:15px;font-size:clamp(1.18rem,3vw,1.48rem);font-weight:750;line-height:1.35}
+#math-careers .answers{display:grid;gap:10px}
+#math-careers .answer{display:flex;align-items:flex-start;gap:12px;padding:13px 15px;border:1.5px solid var(--line);border-radius:12px;cursor:pointer;transition:.15s}
+#math-careers .answer:hover{border-color:var(--ocean);background:#f5f8fb}
+#math-careers .answer:has(input:checked){border-color:var(--blue);background:#eef2f7;box-shadow:0 0 0 2px #31456b17}
+#math-careers .answer input{position:absolute;opacity:0;width:1px;height:1px}
+#math-careers .letter{display:grid;place-items:center;flex:0 0 28px;height:28px;border-radius:8px;background:#edf0f2;color:#41506a;font-weight:800;font-size:.85rem}
+#math-careers .answer:has(input:checked) .letter{color:#fff;background:var(--blue)}
+#math-careers .answer:focus-within{outline:3px solid #9bb7d0;outline-offset:2px}
+#math-careers .controls{display:flex;justify-content:space-between;align-items:center;gap:12px}
+#math-careers .btn{border:0;border-radius:10px;padding:12px 19px;font-weight:700;cursor:pointer;transition:transform .12s}
+#math-careers .btn:hover{transform:translateY(-1px)}#math-careers .btn-primary{color:#fff;background:var(--blue)}#math-careers .btn-primary:hover{background:#263a5a}
+#math-careers .btn-secondary{color:var(--ink);background:#edf0f2}#math-careers .btn:disabled{cursor:not-allowed;opacity:.48;transform:none}
+#math-careers .hint{min-height:1.4em;color:#9c3e2b;font-size:.88rem}
+#math-careers .result-card{display:none;margin-top:20px;padding:clamp(20px,4vw,34px)}
+#math-careers .result-label{color:#4e7950;font-family:Montserrat,Tahoma,sans-serif;font-weight:800;letter-spacing:.1em;text-transform:uppercase;font-size:.75rem}
+#math-careers .score-list{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:17px 0 20px}
+#math-careers .score{padding:12px;background:#f0f3f5;border-radius:10px}#math-careers .score span{display:block;color:var(--muted);font-size:.76rem}
+#math-careers h2#career-guides{margin-top:42px}
+#math-careers h3.career-card{margin:34px 0 10px;padding:15px 18px;border-left:5px solid var(--ocean);border-radius:0 12px 12px 0;background:#fff;box-shadow:var(--shadow);scroll-margin-top:18px}
+#math-careers h3.career-card.highlight{outline:3px solid var(--green);outline-offset:2px}
+#math-careers .fine{color:var(--muted);font-size:.8rem;margin:14px 0 0}
+#math-careers a{color:var(--blue)}#math-careers .reset{margin-top:10px}
+@media(max-width:620px){#math-careers .photo-band{grid-template-columns:1fr}.photo-band img{height:210px!important}.score-list{grid-template-columns:repeat(2,1fr)}}
+@media(prefers-reduced-motion:reduce){#math-careers *{scroll-behavior:auto!important;transition:none!important}}
+</style>
+
+:::: {#math-careers}
+
+[![](images/csumb-mathstat-horizontal.png)](https://csumb.edu/math/){fig-align="center"}
+
+::: {.hero}
+<p class="eyebrow">Career exploration · Mathematics · Statistics & Data Science </p>
+
+# Where could math take you?
+
+Answer five quick questions to explore a math career path that may fit your interests. Then browse salary snapshots, training ideas, and possible job titles. There are no wrong answers.
+:::
+
+::: {.callout-note .program-note}
+## Explore Math and Statistics at CSUMB
+
+Programs include Mathematics for Teaching, Pure & Applied Math, and Statistics & Data Science. Our programs include small classes, faculty mentorship, hands-on learning, research, and service-learning.
+
+[Mathematics](https://csumb.edu/math/) · [Statistics & Data Science](https://csumb.edu/stat/)
+:::
+
+::: {.photo-band}
+
+![CSUMB students work together on a geometric construction in a math class.](images/csumb-math-class.jpg){fig-cap="Collaborative problem-solving in a math classroom"}
+
+![A CSUMB student and community client discuss a chart during meeting.](images/csumb-statistics-data.jpg){fig-cap="Using data to explore questions beyond the classroom"}
+
+:::
+
+<div class="quiz-card">
+<div class="quiz-top"><strong>Your career-fit check-in</strong><span class="count" id="quiz-count" aria-live="polite">Question 1 of 5</span></div>
+<div class="track" aria-hidden="true"><div class="fill" id="quiz-fill"></div></div>
+<form id="career-quiz"><fieldset><legend id="quiz-question"></legend><div class="answers" id="quiz-answers"></div></fieldset><p class="hint" id="quiz-hint" aria-live="polite"></p><div class="controls"><button class="btn btn-secondary" type="button" id="quiz-back">Back</button><button class="btn btn-primary" type="button" id="quiz-next">Next</button></div></form>
+</div>
+
+<div class="result-card" id="quiz-result" aria-live="polite">
+<div class="result-label">Your strongest match</div>
+<h2 id="result-title"></h2>
+<p id="result-description"></p>
+<div class="score-list" id="result-scores"></div>
+<button class="btn btn-primary" type="button" id="result-guide">Explore your career guide</button>
+<button class="btn btn-secondary reset" type="button" id="quiz-restart">Take it again</button>
+</div>
+
+## Explore the four paths {#career-guides}
+
+Career paths can overlap. Use these snapshots to decide what you’d like to learn more about.
+
+### Math Teaching {#teaching .career-card}
+![CSUMB students show off their constructions in Geometry.](images/csumb-math-class-2.jpg){fig-cap="Collaborative problem-solving in a math classroom"}
+
+#### **Focus: People + Explaining**
+
+Help students build mathematical understanding, confidence, and problem-solving skills.
+
+#### **Salary snapshot · California:** 
+$85,107 median annual pay for high school teachers.
+
+#### **Training to explore:** 
+A bachelor’s degree in Mathematics followed by a credential degree is required in California (as one possible avenue). Courses in Calculus, Statistics, and Geometry as well as 45 hours of classroom experience are required for credential programs in California. All of these qualifications are met in the CSUMB *Mathematics for Teaching* Concentration. In addition, programs like *Math and Science Teacher Initiative (MSTI)* provide scholarship support to engage in activities to prepare you for the classroom. [Learn more about the CSUMB Mathematics Program.](https://csumb.edu/math/)
+
+##### **Possible job titles:**
+
+- High school math teacher
+- Middle school math teacher
+- Math intervention specialist
+- Math curriculum specialist
+
+#### **A day might include:** 
+Planning lessons, explaining concepts in different ways, checking student work, and helping learners set goals.
+
+### Applied Math {#applied .career-card}
+![CSUMB students work with an instructor on building a model](images/mathematics-applied.jpg){fig-cap="Building models to solve problems or answer questions"}
+
+#### **Focus: Models + Real-world Problems**
+
+Use mathematical models and computation to understand or improve real systems and practical problems.
+
+#### **Salary snapshot · California:** 
+$113,769 median annual pay for positions such as operations research analysts,  (May 2024), one career that uses applied math.
+
+#### **Training to explore:** 
+A bachelor’s degree in mathematics, with a focus on applied classes such as modeling, numerical, and data analysis, with programming in Python and Matlab, are all skills gained through the **Pure and Applied Concentration in Mathematics at CSUMB**. Our program provides experiential learning and research opportunities directly embedded in your courses, with additional opportunities for faculty mentored research and internships. Some specialized roles require graduate study, and we offer a special course to help you navigate the application process to Master's and PhD programs. [Learn more about the CSUMB Mathematics Program.](https://csumb.edu/math/)
+
+##### **Possible job titles:**
+
+- Applied mathematician
+- Operations research analyst
+- Computational Scientist
+- Quantitative analyst
+
+#### **A day might include:** 
+Turning a practical question into equations or a computer model, testing scenarios, and explaining what a solution could mean in the context of the problem.
+
+### Pure Math {#pure .career-card}
+![CSUMB student works on a problem on a white board](images/mathematics-pure.jpg){fig-cap="Exploring mysteries and making discoveries with mathematics"}
+
+#### **Focus: Patterns + Proofs**
+
+Study mathematical ideas for their structure, patterns, and proofs, including questions with no immediate practical use.
+
+#### **Salary snapshot · California:** 
+$114,970 median annual pay for mathematicians, but positions typically require a PhD. 
+
+#### **Training to explore:** 
+Research mathematicians typically earn a PhD in mathematics. A bachelor’s or master’s degree can also prepare students for related work in areas such as Artificial Intelligence or Cryptography. Topics may include real analysis, abstract algebra, number theory, and complex analysis, all of which are courses offered as a part of the **Pure and Applied Mathematics Concentration in Mathematics at CSUMB**. Since a PhD is typically required, students can start research experiences early through course-based experiences followed by faculty mentored research. In addition, many students find support through the Undergraduate Research Opportunities Center and McNair Scholars Programs to find additional external summer research experiences. Finally, students can complete a special course to help you navigate the application process to a PhD program. [Learn more about the CSUMB Mathematics Program.](https://csumb.edu/math/)
+
+##### **Possible job titles:**
+
+- Research mathematician
+- University mathematics professor
+- Mathematical researcher
+- Mathematics writer or editor
+
+#### **A day might include:** 
+Reading mathematical work, asking precise questions, developing proofs, writing results, or discussing ideas with other mathematicians.
+
+### Statistics & Data Science {#data .career-card}
+
+![Students and faculty work on a data analysis project.](images/statistics-sds.jpg){fig-cap="Finding patterns and making predictions with data"}
+
+#### **Focus: Data + Evidence**
+
+Use data, probability, and computing to find patterns, measure uncertainty, and inform decisions.
+
+#### **Salary snapshot · California:** 
+\$136,000 median annual pay for statisticians and \$141,590 for data scientists.
+
+#### **Training to explore:** 
+The Statistics & Data Science bachelor's degree prepares you many possible jobs in one of the fastest growing fields in the United States. The combination of both Statistics and Data Science provides you with the chance to choose your path, whether you want to work in clinical trials designing new treatments for diseases or machine learning making predictions about ticket sales for a sports team. Since some statistician roles require a master’s degree or PhD, our program mixes both theoretical foundations with computational methods and applications so that you can easily transitions to graduate degree program, with support through a special course to help with the application process.. Students gain hands-on learning through course-based projects, a service-learning internship, and can seek faculty-mentored research experiences or work as a consultant our data analysis center on campus.  You will build skills in coding, data visualization, experimental design, and communicating evidence to clients and the public alike. [Learn more about the CSUMB Statistics & Data Science Program.](https://csumb.edu/math/)
+
+##### **Possible job titles:**
+
+- Statistician
+- Data scientist
+- Actuary
+- Data or business analyst
+- Biostatistician
+
+#### **A day might include:** 
+Cleaning data, choosing an analysis, checking whether a pattern is reliable, and communicating what the evidence can and cannot show.
+
+::::
+
+::: {.fine-print}
+Salary figures are Californian medians from October 2026, not starting salaries or guarantees. Actual pay varies by location, employer, experience, and education. Some paths span several occupations, so a listed job is an example, not a complete salary estimate for the field. See the [BLS high school teacher](https://www.bls.gov/ooh/education-training-and-library/high-school-teachers.htm), [mathematician and statistician](https://www.bls.gov/ooh/math/mathematicians-and-statisticians.htm), [data scientist](https://www.bls.gov/ooh/math/data-scientists.htm), and [operations research analyst](https://www.bls.gov/ooh/math/operations-research-analysts.htm) pages for details on national medians and pay expectations. 
+
+:::
+
+
+[![](images/csumb-mathstat-horizontal.png)](https://csumb.edu/math/){fig-align="center"}
+
+<script>
+(() => {
+  const careers = [
+    { id: "teaching", title: "Math Teaching", description: "You may enjoy explaining ideas, supporting learners, and helping students grow more confident with math." },
+    { id: "applied", title: "Applied Math", description: "You may enjoy using mathematical tools to model practical problems and improve real-world systems." },
+    { id: "pure", title: "Pure Math", description: "You may enjoy exploring patterns, abstract questions, and the logic behind mathematical ideas." },
+    { id: "data", title: "Statistics & Data Science", description: "You may enjoy finding patterns in data, evaluating evidence, and helping people make informed decisions." }
+  ];
+  const questions = [
+    { q: "Which activity sounds most satisfying?", a: [
+      "Helping someone understand a math idea they found confusing",
+      "Using math to solve a practical problem, such as improving a design",
+      "Exploring why a mathematical idea is true and how it connects to others",
+      "Finding patterns in data and using them to answer a real-world question"
+    ]},
+    { q: "Which project would you choose?", a: [
+      "Create a lesson or activity that makes a math topic easier to learn",
+      "Use math to help design a safer bridge, faster route, or more efficient process",
+      "Investigate a puzzle or theorem and write a proof",
+      "Study survey or experiment results and explain what they reveal"
+    ]},
+    { q: "Which question are you most curious about?", a: [
+      "How can people learn challenging math concepts?",
+      "How can math help us understand or improve real systems?",
+      "What makes a mathematical statement true?",
+      "What can data tell us, and how certain should we be?"
+    ]},
+    { q: "When working with others, which role feels most appealing?", a: [
+      "Explaining ideas and helping the group learn",
+      "Applying math to the group’s practical challenge",
+      "Exploring the logic behind the problem",
+      "Organizing evidence and checking what the numbers support"
+    ]},
+    { q: "If you could spend a day exploring one topic, which would you pick?", a: [
+      "How students learn algebra or geometry",
+      "How math can improve transportation, medicine, technology, or the environment",
+      "Number patterns, geometry, infinity, or mathematical proof",
+      "Data about health, sports, climate, business, or people"
+    ]}
+  ];
+  let index = 0;
+  const selected = Array(questions.length).fill(null);
+  const root = document.getElementById("math-careers");
+  const el = id => root.querySelector("#" + id);
+  const questionEl = el("quiz-question"), answersEl = el("quiz-answers"), countEl = el("quiz-count");
+  const fillEl = el("quiz-fill"), hintEl = el("quiz-hint"), backButton = el("quiz-back"), nextButton = el("quiz-next");
+
+  function renderQuestion() {
+    countEl.textContent = `Question ${index + 1} of ${questions.length}`;
+    fillEl.style.width = `${index / questions.length * 100}%`;
+    questionEl.textContent = questions[index].q;
+    answersEl.innerHTML = "";
+    questions[index].a.forEach((answer, choice) => {
+      const label = document.createElement("label");
+      label.className = "answer";
+      const input = document.createElement("input");
+      input.type = "radio";
+      input.name = `question-${index}`;
+      input.checked = selected[index] === choice;
+      input.addEventListener("change", () => {
+        selected[index] = choice;
+        hintEl.textContent = "";
+        nextButton.disabled = false;
+      });
+      const letter = document.createElement("span");
+      letter.className = "letter";
+      letter.textContent = String.fromCharCode(65 + choice);
+      const text = document.createElement("span");
+      text.textContent = answer;
+      label.append(input, letter, text);
+      answersEl.append(label);
+    });
+    backButton.disabled = index === 0;
+    nextButton.disabled = selected[index] === null;
+    nextButton.textContent = index === questions.length - 1 ? "See my result" : "Next";
+    hintEl.textContent = "";
+  }
+
+  function showResult() {
+    const scores = [0, 0, 0, 0];
+    selected.forEach(choice => scores[choice]++);
+    const highest = Math.max(...scores);
+    const winners = careers.filter((_, position) => scores[position] === highest);
+    el("result-title").textContent = winners.length > 1 ? "A tie: " + winners.map(c => c.title).join(" + ") : winners[0].title;
+    el("result-description").textContent = winners.length > 1
+      ? "You have more than one strong interest. Explore each matching guide and notice which activities you’d most like to try."
+      : winners[0].description;
+    el("result-scores").innerHTML = careers.map((career, position) =>
+      `<div class="score"><span>${career.title}</span><strong>${scores[position]} / 5</strong></div>`
+    ).join("");
+    el("quiz-result").style.display = "block";
+    el("result-guide").onclick = () => {
+      root.querySelectorAll(".career-card").forEach(card => card.classList.remove("highlight"));
+      winners.forEach(career => root.querySelector("#" + career.id).classList.add("highlight"));
+      root.querySelector("#" + winners[0].id).scrollIntoView({ behavior: "smooth", block: "start" });
+    };
+    fillEl.style.width = "100%";
+    el("quiz-result").scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
+
+  nextButton.addEventListener("click", () => {
+    if (selected[index] === null) { hintEl.textContent = "Choose an answer to continue."; return; }
+    if (index < questions.length - 1) { index++; renderQuestion(); }
+    else showResult();
+  });
+  backButton.addEventListener("click", () => { if (index > 0) { index--; renderQuestion(); } });
+  el("quiz-restart").addEventListener("click", () => {
+    selected.fill(null);
+    index = 0;
+    el("quiz-result").style.display = "none";
+    root.querySelectorAll(".career-card").forEach(card => card.classList.remove("highlight"));
+    renderQuestion();
+    el("career-quiz").scrollIntoView({ behavior: "smooth" });
+  });
+  renderQuestion();
+})();
+</script>

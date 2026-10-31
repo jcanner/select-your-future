@@ -1,0 +1,18 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - images/**
+
+website:
+  title: "CSUMB Mathematics & Statistics | Math Career Exploration"
+  navbar: false
+  page-footer:
+    center: "CSUMB Mathematics & Statistics · Career exploration for high school students"
+
+format:
+  html:
+    theme: cosmo
+    toc: false
+    page-layout: full
+    smooth-scroll: true
