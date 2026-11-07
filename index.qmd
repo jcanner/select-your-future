@@ -6,6 +6,8 @@ format:
     toc: false
     page-layout: full
 ---
+
+```{=html}
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap');
 :root{--ink:#26364e;--muted:#586a7f;--paper:#f5f7f9;--line:#d9e0e8;--blue:#31456b;--ocean:#6b92b6;--green:#689466;--bright:#93b96c;--sunshine:#e0b457;--shadow:0 14px 38px rgba(38,54,78,.09)}
@@ -60,14 +62,17 @@ format:
 @media(max-width:620px){#math-careers .photo-band{grid-template-columns:1fr}.photo-band img{height:210px!important}.score-list{grid-template-columns:repeat(2,1fr)}}
 @media(prefers-reduced-motion:reduce){#math-careers *{scroll-behavior:auto!important;transition:none!important}}
 </style>
+```
 
+:::::::::::::::: {#math-careers}
+[![](images/csumb-mathstat-horizontal.png)](https://csumb.edu/math/)
 
-:::: {#math-careers}
+::: hero
+<p class="eyebrow">
 
-[![](images/csumb-mathstat-horizontal.png)](https://csumb.edu/math/){fig-align="center"}
+Career exploration · Mathematics · Statistics & Data Science
 
-::: {.hero}
-<p class="eyebrow">Career exploration · Mathematics · Statistics & Data Science </p>
+</p>
 
 # Where could math take you?
 
@@ -77,50 +82,107 @@ Answer five quick questions to explore a math career path that may fit your inte
 ::: {.callout-note .program-note}
 ## Explore Math and Statistics at CSUMB
 
-Programs include Mathematics for Teaching, Pure & Applied Math, and Statistics & Data Science. Our programs include small classes, faculty mentorship, hands-on learning, research, and service-learning.
+Our programs include Mathematics for Teaching, Pure & Applied Math, and Statistics & Data Science. Our programs include small classes, faculty mentorship, hands-on learning, research, and service-learning. Career paths can overlap. Use these snapshots to decide what you’d like to learn more about.
 
 [Mathematics](https://csumb.edu/math/) · [Statistics & Data Science](https://csumb.edu/stat/)
 :::
 
-::: {.photo-band}
-
+::: photo-band
 ![CSUMB students work together on a geometric construction in a math class.](images/csumb-math-class.jpg){fig-cap="Collaborative problem-solving in a math classroom"}
 
 ![A CSUMB student and community client discuss a chart during meeting.](images/csumb-statistics-data.jpg){fig-cap="Using data to explore questions beyond the classroom"}
-
 :::
 
-<div class="quiz-card">
-<div class="quiz-top"><strong>Your career-fit check-in</strong><span class="count" id="quiz-count" aria-live="polite">Question 1 of 5</span></div>
-<div class="track" aria-hidden="true"><div class="fill" id="quiz-fill"></div></div>
-<form id="career-quiz"><fieldset><legend id="quiz-question"></legend><div class="answers" id="quiz-answers"></div></fieldset><p class="hint" id="quiz-hint" aria-live="polite"></p><div class="controls"><button class="btn btn-secondary" type="button" id="quiz-back">Back</button><button class="btn btn-primary" type="button" id="quiz-next">Next</button></div></form>
-</div>
+:::::::: quiz-card
+::: quiz-top
+<strong>Your career-fit check-in</strong>[Question 1 of 5]{#quiz-count .count aria-live="polite"}
+:::
 
-<div class="result-card" id="quiz-result" aria-live="polite">
-<div class="result-label">Your strongest match</div>
-<h2 id="result-title"></h2>
-<p id="result-description"></p>
-<div class="score-list" id="result-scores"></div>
-<button class="btn btn-primary" type="button" id="result-guide">Explore your career guide</button>
-<button class="btn btn-secondary reset" type="button" id="quiz-restart">Take it again</button>
-</div>
+:::: {.track aria-hidden="true"}
+::: {#quiz-fill .fill}
+:::
+::::
+
+<form id="career-quiz">
+
+<fieldset>
+
+<legend id="quiz-question"></legend>
+
+::: {#quiz-answers .answers}
+:::
+
+</fieldset>
+
+<p class="hint" id="quiz-hint" aria-live="polite">
+
+</p>
+
+::: controls
+<button class="btn btn-secondary" type="button" id="quiz-back">
+
+Back
+
+</button>
+
+<button class="btn btn-primary" type="button" id="quiz-next">
+
+Next
+
+</button>
+:::
+
+</form>
+::::::::
+
+::::: {#quiz-result .result-card aria-live="polite"}
+::: result-label
+Your strongest match
+:::
+
+<h2 id="result-title">
+
+</h2>
+
+<p id="result-description">
+
+</p>
+
+::: {#result-scores .score-list}
+:::
+
+<button class="btn btn-primary" type="button" id="result-guide">
+
+Explore your career guide
+
+</button>
+
+<button class="btn btn-secondary reset" type="button" id="quiz-restart">
+
+Take it again
+
+</button>
+:::::
 
 ## Explore the four paths {#career-guides}
 
 Career paths can overlap. Use these snapshots to decide what you’d like to learn more about.
 
 ### Math Teaching {#teaching .career-card}
+
 ![CSUMB students show off their constructions in Geometry.](images/csumb-math-class-2.jpg){fig-cap="Collaborative problem-solving in a math classroom"}
 
 #### **Focus: People + Explaining**
 
 Help students build mathematical understanding, confidence, and problem-solving skills.
 
-#### **Salary snapshot · California:** 
-$85,107 median annual pay for high school teachers.
+#### **Salary snapshot · California:**
 
-#### **Training to explore:** 
-A bachelor’s degree in Mathematics followed by a credential degree is required in California (as one possible avenue). Courses in Calculus, Statistics, and Geometry as well as 45 hours of classroom experience are required for credential programs in California. All of these qualifications are met in the CSUMB *Mathematics for Teaching* Concentration. In addition, programs like *Math and Science Teacher Initiative (MSTI)* provide scholarship support to engage in activities to prepare you for the classroom. [Learn more about the CSUMB Mathematics Program.](https://csumb.edu/math/)
+\$85,107 median annual pay for high school teachers.
+
+#### **Training to explore:**
+
+A bachelor’s degree in Mathematics followed by a credential degree is required in California (as one possible avenue). Courses in Calculus, Statistics, and Geometry as well as 45 hours of classroom experience are required for credential programs in California. All of these qualifications are met in the **CSUMB Mathematics for Teaching Concentration**. In addition, programs like *Math and Science Teacher Initiative (MSTI)* provide scholarship support to engage in activities to prepare you for the classroom. [Learn more about the CSUMB Mathematics Program.](https://csumb.edu/math/)
 
 ##### **Possible job titles:**
 
@@ -129,21 +191,25 @@ A bachelor’s degree in Mathematics followed by a credential degree is required
 - Math intervention specialist
 - Math curriculum specialist
 
-#### **A day might include:** 
+#### **A day might include:**
+
 Planning lessons, explaining concepts in different ways, checking student work, and helping learners set goals.
 
 ### Applied Math {#applied .career-card}
+
 ![CSUMB students work with an instructor on building a model](images/mathematics-applied.jpg){fig-cap="Building models to solve problems or answer questions"}
 
 #### **Focus: Models + Real-world Problems**
 
 Use mathematical models and computation to understand or improve real systems and practical problems.
 
-#### **Salary snapshot · California:** 
-$113,769 median annual pay for positions such as operations research analysts,  (May 2024), one career that uses applied math.
+#### **Salary snapshot · California:**
 
-#### **Training to explore:** 
-A bachelor’s degree in mathematics, with a focus on applied classes such as modeling, numerical, and data analysis, with programming in Python and Matlab, are all skills gained through the **Pure and Applied Concentration in Mathematics at CSUMB**. Our program provides experiential learning and research opportunities directly embedded in your courses, with additional opportunities for faculty mentored research and internships. Some specialized roles require graduate study, and we offer a special course to help you navigate the application process to Master's and PhD programs. [Learn more about the CSUMB Mathematics Program.](https://csumb.edu/math/)
+\$113,769 median annual pay for positions such as operations research analysts, (May 2024), one career that uses applied math.
+
+#### **Training to explore:**
+
+A bachelor’s degree in mathematics, with a focus on applied classes such as modeling, numerical, and data analysis, with programming in Python and Matlab, are all skills gained through the **Pure and Applied Mathematics Concentration at CSUMB**. Our program provides experiential learning and research opportunities directly embedded in your courses, with additional opportunities for faculty mentored research and internships. Some specialized roles require graduate study, and we offer a special course to help you navigate the application process to Master’s and PhD programs. [Learn more about the CSUMB Mathematics Program.](https://csumb.edu/math/)
 
 ##### **Possible job titles:**
 
@@ -152,30 +218,36 @@ A bachelor’s degree in mathematics, with a focus on applied classes such as mo
 - Computational Scientist
 - Quantitative analyst
 
-#### **A day might include:** 
+#### **A day might include:**
+
 Turning a practical question into equations or a computer model, testing scenarios, and explaining what a solution could mean in the context of the problem.
 
 ### Pure Math {#pure .career-card}
+
 ![CSUMB student works on a problem on a white board](images/mathematics-pure.jpg){fig-cap="Exploring mysteries and making discoveries with mathematics"}
 
 #### **Focus: Patterns + Proofs**
 
 Study mathematical ideas for their structure, patterns, and proofs, including questions with no immediate practical use.
 
-#### **Salary snapshot · California:** 
-$114,970 median annual pay for mathematicians, but positions typically require a PhD. 
+#### **Salary snapshot · California:**
 
-#### **Training to explore:** 
+\$114,970 median annual pay for mathematicians, but positions typically require a PhD.
+
+#### **Training to explore:**
+
+::: {}
 Research mathematicians typically earn a PhD in mathematics. A bachelor’s or master’s degree can also prepare students for related work in areas such as Artificial Intelligence or Cryptography. Topics may include real analysis, abstract algebra, number theory, and complex analysis, all of which are courses offered as a part of the **Pure and Applied Mathematics Concentration in Mathematics at CSUMB**. Since a PhD is typically required, students can start research experiences early through course-based experiences followed by faculty mentored research. In addition, many students find support through the Undergraduate Research Opportunities Center and McNair Scholars Programs to find additional external summer research experiences. Finally, students can complete a special course to help you navigate the application process to a PhD program. [Learn more about the CSUMB Mathematics Program.](https://csumb.edu/math/)
+:::
 
 ##### **Possible job titles:**
 
 - Research mathematician
 - University mathematics professor
-- Mathematical researcher
-- Mathematics writer or editor
+- Mathematical analyst
 
-#### **A day might include:** 
+#### **A day might include:**
+
 Reading mathematical work, asking precise questions, developing proofs, writing results, or discussing ideas with other mathematicians.
 
 ### Statistics & Data Science {#data .career-card}
@@ -186,11 +258,14 @@ Reading mathematical work, asking precise questions, developing proofs, writing 
 
 Use data, probability, and computing to find patterns, measure uncertainty, and inform decisions.
 
-#### **Salary snapshot · California:** 
+#### **Salary snapshot · California:**
+
 \$136,000 median annual pay for statisticians and \$141,590 for data scientists.
 
-#### **Training to explore:** 
-The Statistics & Data Science bachelor's degree prepares you many possible jobs in one of the fastest growing fields in the United States. The combination of both Statistics and Data Science provides you with the chance to choose your path, whether you want to work in clinical trials designing new treatments for diseases or machine learning making predictions about ticket sales for a sports team. Since some statistician roles require a master’s degree or PhD, our program mixes both theoretical foundations with computational methods and applications so that you can easily transitions to graduate degree program, with support through a special course to help with the application process.. Students gain hands-on learning through course-based projects, a service-learning internship, and can seek faculty-mentored research experiences or work as a consultant our data analysis center on campus.  You will build skills in coding, data visualization, experimental design, and communicating evidence to clients and the public alike. [Learn more about the CSUMB Statistics & Data Science Program.](https://csumb.edu/math/)
+#### **Training to explore:**
+
+The **CSUMB Statistics & Data Science** bachelor’s degree prepares you for many possible jobs in one of the fastest growing fields in the United States. The combination of both Statistics and Data Science provides you with the chance to choose your path, whether you test
+new treatments for diseases or use machine learning making predictions about ticket sales for a sports team. Since some roles require a master’s degree or PhD, our program mixes both theoretical foundations with computational methods so that you can easily transitions to graduate degree program. Students gain hands-on learning through course-based projects, a service-learning internship, and faculty-mentored research experiences or work as a consultant our data analysis center on campus. [Learn more about the CSUMB Statistics & Data Science Program.](https://csumb.edu/math/)
 
 ##### **Possible job titles:**
 
@@ -200,19 +275,18 @@ The Statistics & Data Science bachelor's degree prepares you many possible jobs 
 - Data or business analyst
 - Biostatistician
 
-#### **A day might include:** 
+#### **A day might include:**
+
 Cleaning data, choosing an analysis, checking whether a pattern is reliable, and communicating what the evidence can and cannot show.
+::::::::::::::::
 
-::::
-
-::: {.fine-print}
-Salary figures are Californian medians from October 2026, not starting salaries or guarantees. Actual pay varies by location, employer, experience, and education. Some paths span several occupations, so a listed job is an example, not a complete salary estimate for the field. See the [BLS high school teacher](https://www.bls.gov/ooh/education-training-and-library/high-school-teachers.htm), [mathematician and statistician](https://www.bls.gov/ooh/math/mathematicians-and-statisticians.htm), [data scientist](https://www.bls.gov/ooh/math/data-scientists.htm), and [operations research analyst](https://www.bls.gov/ooh/math/operations-research-analysts.htm) pages for details on national medians and pay expectations. 
-
+::: fine-print
+Salary figures are Californian medians from October 2026, not starting salaries or guarantees. Actual pay varies by location, employer, experience, and education. Some paths span several occupations, so a listed job is an example, not a complete salary estimate for the field. See the [BLS high school teacher](https://www.bls.gov/ooh/education-training-and-library/high-school-teachers.htm), [mathematician and statistician](https://www.bls.gov/ooh/math/mathematicians-and-statisticians.htm), [data scientist](https://www.bls.gov/ooh/math/data-scientists.htm), and [operations research analyst](https://www.bls.gov/ooh/math/operations-research-analysts.htm) pages for details on national medians and pay expectations.
 :::
 
+[![](images/csumb-mathstat-horizontal.png)](https://csumb.edu/math/)
 
-[![](images/csumb-mathstat-horizontal.png)](https://csumb.edu/math/){fig-align="center"}
-
+```{=html}
 <script>
 (() => {
   const careers = [
@@ -330,3 +404,4 @@ Salary figures are Californian medians from October 2026, not starting salaries 
   renderQuestion();
 })();
 </script>
+```
